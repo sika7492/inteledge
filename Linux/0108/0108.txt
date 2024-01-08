@@ -1,0 +1,123 @@
+Script started on 2024-01-08 12:26:44+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+]0;aisw302@프로그램실1ST12: ~/0108[01;32maisw302@프로그램실1ST12[00m:[01;34m~/0108[00m$ date
+Mon Jan  8 12:26:49 KST 2024
+]0;aisw302@프로그램실1ST12: ~/0108[01;32maisw302@프로그램실1ST12[00m:[01;34m~/0108[00m$ hostname
+프로그램실1ST12
+]0;aisw302@프로그램실1ST12: ~/0108[01;32maisw302@프로그램실1ST12[00m:[01;34m~/0108[00m$ uname
+Linux
+]0;aisw302@프로그램실1ST12: ~/0108[01;32maisw302@프로그램실1ST12[00m:[01;34m~/0108[00m$ whoami
+aisw302
+]0;aisw302@프로그램실1ST12: ~/0108[01;32maisw302@프로그램실1ST12[00m:[01;34m~/0108[00m$ who
+]0;aisw302@프로그램실1ST12: ~/0108[01;32maisw302@프로그램실1ST12[00m:[01;34m~/0108[00m$ clear
+[H[2J[3J]0;aisw302@프로그램실1ST12: ~/0108[01;32maisw302@프로그램실1ST12[00m:[01;34m~/0108[00m$ n[Kman ls
+[?1049h[22;0;0t[?1h=LS(1)                                               User Commands                                               LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information  about the FILEs (the current directory by default).  Sort entries alphabetically if none of[m
+       [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;aisw302@프로그램실1ST12: ~/0108[01;32maisw302@프로그램실1ST12[00m:[01;34m~/0108[00m$ whatis ls
+ls (1)               - list directory contents
+]0;aisw302@프로그램실1ST12: ~/0108[01;32maisw302@프로그램실1ST12[00m:[01;34m~/0108[00m$ cd~[K ~
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ ma[Kki[Kdir song
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ mkdir song/si
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ mkdir log[K[K[Ksong2[K[K[K[K[Ksong2
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ mkdir song/co[K[K[K[K2[Kng2[K[K[Kg2/doc
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ mkdir song2/test
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ mkdir[K[K[K[K[Kcat >ch[K[K song2/test/cs1.txt
+Test file
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ tree
+[01;34m.[00m
+├── [01;34m0108[00m
+│   ├── 0108.txt
+│   ├── hello.c
+│   └── readme.md
+├── [01;34mchang[00m
+│   ├── [01;34mdoc[00m
+│   └── [01;34mtest[00m
+│       └── cs1.txt
+├── [01;34mchoi[00m
+│   └── [01;34mcs101[00m
+├── [01;34msong[00m
+│   └── [01;34msi[00m
+├── [01;34msong2[00m
+│   ├── [01;34mdoc[00m
+│   └── [01;34mtest[00m
+│       └── cs1.txt
+└── [01;34mtest[00m
+
+12 directories, 5 files
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ which ls
+/usr/bin/ls
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ pwd
+/home/aisw302
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ cd~[K ~
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ mkdir d[K-p abc/def/ghi
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ remdir abc/def/ghi/
+
+Command 'remdir' not found, did you mean:
+
+  command 'redir' from deb redir (3.2-1)
+  command 'rmdir' from deb coreutils (8.30-3ubuntu2)
+
+Try: sudo apt install <deb name>
+
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ remdir abc/def/ghi/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krm -r b[Kabc
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ alias
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ cat 0108/hoo[K[Keel[K[Kllo.c
+#inlcude<stdio.h>
+int main(){
+	printf("Helloe C Wordld!!\n");
+	return 0:
+}]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ ll[K[Kll 0108
+total 16
+drwxr-xr-x 2 aisw302 aisw302 4096 Jan  8 12:26 [0m[01;34m.[0m/
+drwxr-xr-x 9 aisw302 aisw302 4096 Jan  8 12:31 [01;34m..[0m/
+-rw-r--r-- 1 aisw302 aisw302 4096 Jan  8 12:29 0108.txt
+-rw-r--r-- 1 aisw302 aisw302   74 Jan  8 12:14 hello.c
+-rw-r--r-- 1 aisw302 aisw302    0 Jan  8 12:14 readme.md
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ th[Kouch 0100[K8/hello.c 
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ ll 0108/
+total 16
+drwxr-xr-x 2 aisw302 aisw302 4096 Jan  8 12:26 [0m[01;34m.[0m/
+drwxr-xr-x 9 aisw302 aisw302 4096 Jan  8 12:31 [01;34m..[0m/
+-rw-r--r-- 1 aisw302 aisw302 4096 Jan  8 12:29 0108.txt
+-rw-r--r-- 1 aisw302 aisw302   74 Jan  8 12:32 hello.c
+-rw-r--r-- 1 aisw302 aisw302    0 Jan  8 12:14 readme.md
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ wc 0108/hello.c 
+ 4  9 74 0108/hello.c
+]0;aisw302@프로그램실1ST12: ~[01;32maisw302@프로그램실1ST12[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2024-01-08 12:32:36+09:00 [COMMAND_EXIT_CODE="0"]
