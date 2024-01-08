@@ -1,0 +1,117 @@
+
+
+power shell  	//관지라 모드로 실행
+
+wsl --install    //리눅스 설치 프로그램;
+//재부팅
+
+user name: aisw302   // 유저 이름
+password: 302 //비밀번호
+
+sudo apt update//
+
+GUI Graphic user Interface
+CLI command Line Interface
+
+
+
+명령어에 대한 정보 얻는법
+
+man ls   //man 명령어  온라인 매뉴얼
+help --ls	//help --명령어
+info ls	//info 명령어\
+
+cat .profile
+
+
+. 	//현재 디렉토리
+.. 	//부모 디렉토리
+~	//홈디렉토리
+/	//루트디렉토리
+
+
+date	//날짜 및 시간 확인
+
+//시스템정보 확인
+hostname	//
+uname		//
+uname -a		//
+
+//사용자 정보 확인
+
+whoami
+
+who
+
+ls  	//디렉터리 내용확인
+
+whatis 명령어 	//명령어에 대한 간단한 설명
+
+
+cd ~
+mkdir 폴더명/폴더명
+
+
+sudo apt install tree	//tree 명령어 설치
+tree			//경로 보는 명령어
+
+cat	// 파일 보는명령어
+cat >	// >명령어로 파일 생성 가능
+
+
+경로 확인 명령어
+
+which 명령어
+
+
+//디렉토리 명령어
+
+
+pwd 	//현재 작업중인 디렉터리
+cd	//디렉터리 이동 change directory
+mkdir [-p]	// 디렉터리 생성
+
+
+ls	//디렉토리 리스트 windows dir
+-a	//숨긴 파일을 포함하여 리스트
+-s	//파일크기를 k바이트 단위로 출력한다
+-l	//파일 상세 정보 출력
+-F	//파일의 종류 표시
+-R	//모든 하위 디렉토리
+alias	// ls 명령어의 약자들을 출력한다.
+
+ll 	//ls -alF
+
+cat > 파일	//파일 생성 ^D로 종료;
+touch 파일	// 빈파일 생성
+
+//파일 내용보기
+
+cat -n 파일명
+more 파일	//페이지 단위로 파일보기
+head	//파일 앞부분 보기
+tail	//파일 뒷부분 보기
+wc [-lwc]		//word count 파일에 저장된 줄(l),단어(w),문자(c) 개수를 세서 출력한다. 
+
+script 파일명	//수행한 명령어를 저장한다.
+
+cp 파일1 파일2	//파일 복사
+cp -i 	//이미 있는 파일명이 존재하면 덮어쓰기
+cp -r 디렉터리1 디렉터리2 	//디렉터리1 전체를 디렉토리2에 복사한다
+
+
+mv 파일1 파일2	//파일 이동or 파일 이름변경
+
+
+rm 파일	// 파일 삭제
+
+ln	//링크
+ln -s	//심볼릭 링크
+ln -
+
+explorer.exe .	//wsl에서 윈도우 상에 파일위치 찾는법
+
+vi, cheat sheet
+
+https://vim.rtorr.com/lang/ko
+	
