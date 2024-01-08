@@ -114,4 +114,7 @@ explorer.exe .	//wsl에서 윈도우 상에 파일위치 찾는법
 vi, cheat sheet
 
 https://vim.rtorr.com/lang/ko
+
+gcc 파일		//컴파일 방법 
+-o 파일명 파일1	//옵션 파일1을 파일명으로 실행파일 생성 옵션
 	
