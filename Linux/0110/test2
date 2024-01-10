@@ -1,0 +1,4 @@
+echo The time and date are:
+date
+echo "Let's see list of current directory"
+ls -asF

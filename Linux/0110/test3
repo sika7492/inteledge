@@ -1,0 +1,3 @@
+echo "User informainton form the system"
+echo UID:$UID
+echo HOMO:$HOME
