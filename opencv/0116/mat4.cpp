@@ -30,5 +30,10 @@ int main() {
 	}
 	cout << "\n ptr()함수을 활용하여 mat1의 모든원소 +1 \nmat1 :\n " << mat1 << endl;
 
+	for (MatIterator_<uchar> it = mat1.begin<uchar>(); it != mat1.end<uchar>(); ++it) {
+		(*it)++;
+	}
+	cout << "\n MatIterator_ 반복자를 활용하여 mat1의 모든원소 +1 \nmat1 :\n " << mat1 << endl;
+
 
 }
