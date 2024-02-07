@@ -53,5 +53,21 @@ WordPress
 
 ![wordpress_setting](https://github.com/sika7492/inteledge/assets/154478957/a6abee78-9264-4a9a-90d4-291734f5d2f1)
 
+Container list
+
+--wordpress 의 포트 확인 
+
+https://user_ip:wordpress_port
+
+![wordpress_setting2](https://github.com/sika7492/inteledge/assets/154478957/55f5b4b8-4564-4653-a383-29af7455485a)
+
+
+## WordPress 홈페이지 화면
+
+![wordpress_home](https://github.com/sika7492/inteledge/assets/154478957/0a8e677c-aad5-4d40-9f8c-05a809ea22b3)
+
+
+
+
 
 
