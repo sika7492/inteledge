@@ -1,4 +1,4 @@
-# RaspberryPi  casaos 및 PI-Hosted & WordPress
+# RaspberryPi3 --  casaos 및 PI-Hosted & WordPress
 
 ## Casaos 설치 및 실행 
 
