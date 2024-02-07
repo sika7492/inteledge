@@ -62,10 +62,13 @@ https://user_ip:wordpress_port
 ![wordpress_setting2](https://github.com/sika7492/inteledge/assets/154478957/55f5b4b8-4564-4653-a383-29af7455485a)
 
 
-## WordPress 홈페이지 화면
+## WordPress 홈페이지 편집 화면
 
 ![wordpress_home](https://github.com/sika7492/inteledge/assets/154478957/0a8e677c-aad5-4d40-9f8c-05a809ea22b3)
 
+## WordPress 홈페이지 화면
+
+![wordpress_home2](https://github.com/sika7492/inteledge/assets/154478957/78ebabc9-07b2-4f55-b574-d812d92f2af8)
 
 
 
