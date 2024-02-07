@@ -48,6 +48,7 @@ RaspberryPi3 setting
 
 WordPress
 --App templates 
+
 ##WordPress 세팅
 
 ![wordpress_setting](https://github.com/sika7492/inteledge/assets/154478957/a6abee78-9264-4a9a-90d4-291734f5d2f1)
