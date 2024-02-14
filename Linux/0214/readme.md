@@ -1,4 +1,4 @@
-# Git
+#git# Git
 
 
 ## 프로그램 개발 과정
@@ -101,14 +101,31 @@ $ cat ~/.gitconfig
 ![git_branch](https://github.com/sika7492/inteledge/assets/154478957/9022b768-130e-48b7-8833-0372dbd3621a)
 
 
->git branch -d <branch>
+>git branch -d <branch> 삭제
+>git branch -D <branch> 강제 삭제
 
 ![git_branch_-d](https://github.com/sika7492/inteledge/assets/154478957/500e5dd0-990a-4207-bd3a-4dd5fa67e2f5)
+
+>git branch -m <branch> 이름변경
 
 
 #### git checkout <branch>
 
->브랜치 전환
+>브랜치 변경
+
+git checkout -b <branch_name>
+
+>브랜치 생성이후 변경
+
+
+git checkout -f ./
+
+>번경사항을 무시한다
+
+git checkout -df ./
+
+>변경 사항을 무시하고 추가된 것들을 삭제한다.
+
 
 #### git diff <branch_1> <branch_2>
 
@@ -117,6 +134,23 @@ $ cat ~/.gitconfig
 #### git commit
 
 Modified 된 파일을 Staged 상태로 커밋하기 위하여 아래의 명령어를 실행합니다.
+
+#### git reset 
+
+>해당 커밋으로 돌아간다. 새로운 커밋 생성X
+
+```
+$ git reset --hard<commit id>
+$ git reset --soft
+```
+
+--hard , --soft hard는 모든 파일을 되돌리는것이고 soft는 앞 커밋을 저장해두고 되돌아가는것이다.
+
+
+#### git revert
+
+
+>해당 커밋으로 돌아가고 새로운 커밋을 생성
 
 
 ### git 이해하기
@@ -137,65 +171,147 @@ branch
 ### Creation and Managin Local Repositories
 
 
-
-
-
-
 ### ex1
 
-$ mkdir central-repo.git 			//폴더 생성
 
-$ cd central-reop.git  			//폴더이동
+central-repo 폴더를 생성하고 
 
-$ git init --bare				//bare 라는 branch
+hello.py를 수정하고 commit하는것을 3번 반복 
 
-$ cd ..					//상위폴더로
+```
+$ mkdir central-repo.git 			
+$ cd central-reop.git  			
+$ git init --bare				
+$ cd ..					
+$ git clone central-repo.git/ developerA	
+$ cd developerA/				
+$ touch hello.py				
+$ vi hello.py					
+$ git add hello.py				
+$ git commit -m "1st commit"
+$ git push
+$ git log --oneline		
+```
 
-$ git clone central-repo.git/ developerA	//developerA 라는 폴더 생성
+새로운  branch를 생성 이후 commit을 하고 push한다.
 
-$ cd developerA/				//폴더이동
-
-$ touch hello.py				//hello.py 생성
-
-$ vi hello.py					//hello.py 수정
-
-$ git add hello.py				//hello.py를  Untracked 상태에서 Tracked 상태로 변경
-
-$ git commit -m "1st commit"			//수정사항을 commit한다 
-
- hello.py를 수정하고 9~10을 3번 반복 
-
- $ git puch					//여기까진 master branch에서 작업함
-
-$ git checkout -b <branch_name>		//새롭게 branch를 생성하고 변경한다.
-
-hello.py를 수정하고 9~10을 반복
-
+그리고  developerB라는 클론을 생성 하고 로그를 확인한다.
+ 
+```			
+$ git checkout -b <branch_name>	
+$ vi hello.py
+$ git add hello.py
+$ git commit -m "commit"
+$ git push
 $ cd ../
-
 $ git clone central-repo.git/ developerB
-
 $ cd developerB/
+$ git log --oneline 				
 
-$ git log --oneline 				//log를 확인하면 14번에서 한 log는 뜨지 않음 새롭게 생성한 branch에 종속됨
+```
 
-$ cd ../developerA				//
-
+```
+$ cd ../developerA			
 $ git checkout master
-
 $ git merge <branch_name>
-
-$ git push					//
-
+$ git push					
 $ cd ../developerB
-
 $ git pull					
+```
 
-### 여기까지 강의
+```
+$ git checkout -b <new_branch_name>
+$ vi README.md
+$ git add README.md
+$ git commit -m "commit"
+$ git push
+$ git checkout master
+$ git merge <new_branch_name>
+$ git pull
 
-#### 실습 
+```
 
-developerb에서 새로운 branch를 생성하고 master에 병합하기 
+
+두개의 폴더에 각각의 branch를 생성하고 테스트용 .py 파일을 추가하고 commit하고 push한다.
+
+
+```
+$ cd ../developerA
+$ git pull
+$ git checkout -d <branch_name-a>
+$ vi mearge_test_a1.py
+$ git add mearge_test_a1.py
+$ git commit -m "add mearge_test_a1.py"
+$ vi mearge_test_a2.py
+$ git add mearge_test_a2.py
+$ git commit -m "add mearge_test_a2.py"
+$ git push 
+$ cd ../developerb
+$ git pull
+$ git checkout -d <branch_name-b>
+$ vi mearge_test_b1.py
+$ git add mearge_test_b1.py
+$ vi mearge_test_b2.py
+$ git add mearge_test_b2.py
+$ git commit -m "add mearge_test_b1.py & add mearge_test_b2.py"
+$ git push 
+```
+이후 마스터 branch로 변경하고 각각을 merge 하고 push한다.
+
+```
+$ git checkout master
+$ git merge origin/<branch_name-a>
+$ git merge origin/<branch_name-b>
+$ git push
+
+```
+
+## Custermize Commit editor
+
+```
+$ cd ../
+$ vi ~/.bashrc
+```
+마지막줄 export EIDTOR=<editor>
+
+## Signing off
+
+$ git commit -s 
+
+
+
+## Investigate Defcets
+
+```
+$ git log --oneline | wc --|# 406
+$ git bisect start
+$ git bisect bad
+$ git bisect good eoc3f7
+```
+Input good/bad/skip upon your test tesults
+
+```
+$ git bisect log
+$ git bisect reset
+```
+
+##Save Temporarily
+
+
+임시 저장 방법 (add를 활용해 commit하는 방법도 있지만 실수로 업로드 가능성있음)
+```
+$ git stash
+$ git status
+$ git stash apply
+```
+
+##Change The History
+
+$ git renase -i <COMMIT_ID>
+
+
+
+
 
 
 
