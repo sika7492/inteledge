@@ -295,7 +295,7 @@ $ git bisect log
 $ git bisect reset
 ```
 
-##Save Temporarily
+## Save Temporarily
 
 
 임시 저장 방법 (add를 활용해 commit하는 방법도 있지만 실수로 업로드 가능성있음)
@@ -305,7 +305,7 @@ $ git status
 $ git stash apply
 ```
 
-##Change The History
+## Change The History
 
 $ git renase -i <COMMIT_ID>
 
