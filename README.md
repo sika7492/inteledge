@@ -17,6 +17,7 @@
 - `opencv`: OpenCV를 이용한 컴퓨터 비전 학습 내용
 - `Linux`: 리눅스에 대한 학습 내용
 - `miniproject`: OpenVINO™를 활용한 위험 감지 및 안전 솔루션 개발 프로젝트
+- `ROS(Robot Operating System)`:ROS(Robot Operating System)를 활용하여 자율주행 개발 프로젝트
 
 각 디렉토리는 날짜별로 정리된 학습 내용을 담고 있습니다.
 
