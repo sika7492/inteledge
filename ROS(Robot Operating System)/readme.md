@@ -11,6 +11,11 @@
 - **TurtleBot OpenCR 구축 및 ROS 통신 명령어 조작**: TurtleBot의 제어 보드인 OpenCR의 설정 방법과 ROS 통신 명령어를 이용한 로봇 조작 방법을 학습하였습니다.
 - **SLAM과 Navigation을 활용한 TurtleBot 조작**: SLAM(Simultaneous Localization and Mapping)과 Navigation 알고리즘을 이용한 로봇의 자율 주행 방법을 학습하였습니다.
 
+## 동영상 링크
+
+- SLAM_NAVI 실습 영상:
+  - pc화면: https://youtu.be/seYvMyl8tEk
+
 ## 참고 자료
 
 - source code  github.com의 ROBOTIS-GIT  : https://github.com/ROBOTIS-GIT/turtlebot3
