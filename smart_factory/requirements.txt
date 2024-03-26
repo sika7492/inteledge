@@ -1,0 +1,8 @@
+numpy
+scikit-build
+pillow
+pyserial
+pyqt5==5.14
+openvino
+opencv-python
+opencv-contrib-python
