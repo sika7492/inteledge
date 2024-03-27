@@ -34,4 +34,5 @@
 # 참고 자료
 * TI.com:
   * AM62A-lp 공식 문서: https://www.ti.com/tool/SK-AM62A-LP?keyMatch=&tisearch=search-everything&usecase=hardware#design-files
+  * AM62Ax Academy: https://dev.ti.com/tirex/explore/node?node=A__AEIJm0rwIeU.2P1OBWwlaA__AM62A-ACADEMY__WeZ9SsL__LATEST
   * Edge AI: Studio: https://dev.ti.com/edgeaistudio/
