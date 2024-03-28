@@ -14,12 +14,19 @@
 ## 동영상 링크
 
 - SLAM_NAVI 실습 영상:
-  - pc화면: https://youtu.be/seYvMyl8tEk
-  - [![Video Label](http://img.youtube.com/vi/'seYvMyl8tEk'/0.jpg)](https://youtu.be/'seYvMyl8tEk')
-  - 주행영상: https://youtu.be/w5q3SaFmKsM
+  - pc화면: 
+  
+  [![Video Label](http://img.youtube.com/vi/seYvMyl8tEk/0.jpg)](https://youtu.be/seYvMyl8tEk)
+  - 주행영상:
+    
+  [![Video Label](http://img.youtube.com/vi/w5q3SaFmKsM/0.jpg)](https://youtu.be/w5q3SaFmKsM)
 - Lane_Detetion 실험 영상:
-  - 주행영상: https://youtu.be/iP6tgItml4k
-  - 주행영상2: https://youtu.be/oNakLLWbEVI
+  - 주행영상:
+    
+   [![Video Label](http://img.youtube.com/vi/iP6tgItml4k/0.jpg)](https://youtu.be/iP6tgItml4k)
+  - 주행영상2:
+
+  [![Video Label](http://img.youtube.com/vi/oNakLLWbEVI/0.jpg)](https://youtu.be/oNakLLWbEVI)
 
 ## 참고 자료
 
