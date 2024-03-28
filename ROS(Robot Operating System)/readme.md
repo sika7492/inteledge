@@ -15,6 +15,7 @@
 
 - SLAM_NAVI 실습 영상:
   - pc화면: https://youtu.be/seYvMyl8tEk
+  - [![Video Label](http://img.youtube.com/vi/'seYvMyl8tEk'/0.jpg)](https://youtu.be/'seYvMyl8tEk')
   - 주행영상: https://youtu.be/w5q3SaFmKsM
 - Lane_Detetion 실험 영상:
   - 주행영상: https://youtu.be/iP6tgItml4k
