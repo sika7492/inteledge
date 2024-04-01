@@ -7,7 +7,7 @@
 * 다운로드 : https://mariadb.org/
 * 설치 버전 : mariadb-10.11.7
 
-## sql 구성요소
+## 쿼리 사용법
 
 * SELECT: 데이터를 조회합니다.
   ```
