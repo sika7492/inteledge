@@ -66,5 +66,25 @@
   SELECT AVG(age) FROM students;
   ```
   - 위의 쿼리는 students 테이블에서 age의 평균을 계산합니다.
-
-
+* WITH: 하나 이상의 임시 결과 집합을 정의하는 데 사용됩니다. 이 결과 집합은 단일 SELECT 문에서 여러 번 사용될 수 있습니다.
+  ```
+  WITH e01 AS (SELECT stdid , ROUND(SUM(clsscr),1) sj01 FROM evtscore01  GROUP BY stdid)
+  ```
+  - 위의 쿼리는 evtscore01 테이블에서 stdid로 그룹화하고, 각 stdid별 clsscr의 합계를 반올림하여 sj01로 반환하는 e01이라는 임시 결과 집합을 정의합니다.
+* CASE: 조건에 따라 다른 값을 반환합니다.
+  ```
+  case when typgubun = '그룹 1' then 1
+     when typgubun = '그룹 2' then 2
+     ELSE 3 END tg
+  ```
+  - 위의 쿼리는 typgubun이 '그룹 1’이면 1을, '그룹 2’이면 2를, 그 외의 경우에는 3을 tg로 반환합니다.
+* IFNULL: 첫 번째 인수가 NULL이 아니면 첫 번째 인수를 반환하고, 첫 번째 인수가 NULL이면 두 번째 인수를 반환합니다.
+  ```
+  IFNULL(e01.sj01,0) + IFNULL(e02.sj02,0) sj
+  ```
+  - 위의 쿼리는 e01.sj01이 NULL이 아니면 e01.sj01을, NULL이면 0을 반환하고, e02.sj02가 NULL이 아니면 e02.sj02를, NULL이면 0을 반환한 후 두 값을 더하여 sj로 반환합니다.
+* RANK() OVER: 특정 열의 순위를 계산합니다. PARTITION BY는 순위를 계산할 때 그룹을 나누는 열을 지정하고, ORDER BY는 순위를 계산할 때 정렬 순서를 지정합니다.
+  ```
+  RANK() OVER (PARTITION BY typgubun ORDER BY (IFNULL(e01.sj01,0) +IFNULL(e02.sj02,0)) DESC) rk
+  ```
+  - 위의 쿼리는 typgubun으로 그룹을 나눈 후, 각 그룹 내에서 (IFNULL(e01.sj01,0) + IFNULL(e02.sj02,0))의 값에 따라 내림차순으로 순위를 계산하고, 그 순위를 rk로 반환합니다.
