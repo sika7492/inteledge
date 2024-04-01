@@ -93,7 +93,6 @@
   CREATE TABLE mstusr_bak
   AS
   SELECT * FROM mstusr;
-
   ```
   - 위의 쿼리를 실행하면, ddsusr 테이블의 모든 열과 데이터가 mstusr_bak 테이블에 복사됩니다. 이렇게 하면 원본 테이블(mstusr)을 변경하지 않고도 데이터를 안전하게 백업하거나 다른 작업을 수행할 수 있습니다.
 
