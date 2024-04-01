@@ -88,3 +88,12 @@
   RANK() OVER (PARTITION BY typgubun ORDER BY (IFNULL(e01.sj01,0) +IFNULL(e02.sj02,0)) DESC) rk
   ```
   - 위의 쿼리는 typgubun으로 그룹을 나눈 후, 각 그룹 내에서 (IFNULL(e01.sj01,0) + IFNULL(e02.sj02,0))의 값에 따라 내림차순으로 순위를 계산하고, 그 순위를 rk로 반환합니다.
+* 테이블 백업 :  mstusr 테이블의 모든 데이터를 복사하여 mstusr_bak라는 새 테이블을 생성합니다
+  ```
+  CREATE TABLE mstusr_bak
+  AS
+  SELECT * FROM mstusr;
+
+  ```
+  - 위의 쿼리를 실행하면, ddsusr 테이블의 모든 열과 데이터가 mstusr_bak 테이블에 복사됩니다. 이렇게 하면 원본 테이블(mstusr)을 변경하지 않고도 데이터를 안전하게 백업하거나 다른 작업을 수행할 수 있습니다.
+
