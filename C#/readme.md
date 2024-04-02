@@ -42,7 +42,7 @@
 ```
 public partial class dbConnect : Form
 {
-    MariaDBInfo mInfo = new MariaDBInfo("localhost", 3306, "your_dbname", "your_username", "your_password");
+    MariaDBInfo mInfo = new MariaDBInfo("localhost", 3306,  "your_username", "your_password","your_dbname");
     string query;
     ...
 }
