@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbConNet", "dbConNet\dbConNet.csproj", "{45ECB3C3-290A-48B5-836B-CBE85AAC87D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbQry", "dbQry\dbQry.csproj", "{4642F647-5B1E-4DF0-B0EA-657BECB5E34E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45ECB3C3-290A-48B5-836B-CBE85AAC87D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45ECB3C3-290A-48B5-836B-CBE85AAC87D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45ECB3C3-290A-48B5-836B-CBE85AAC87D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45ECB3C3-290A-48B5-836B-CBE85AAC87D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4642F647-5B1E-4DF0-B0EA-657BECB5E34E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4642F647-5B1E-4DF0-B0EA-657BECB5E34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4642F647-5B1E-4DF0-B0EA-657BECB5E34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4642F647-5B1E-4DF0-B0EA-657BECB5E34E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64129747-5807-4297-BBC1-22A534972EFF}
+	EndGlobalSection
+EndGlobal
