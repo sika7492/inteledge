@@ -13,7 +13,7 @@ namespace dbQry
 {
     public partial class dbConnect : Form
     {
-        MariaDBInfo mInfo = new MariaDBInfo("localhost", 3306, "iphak", "usr123", "iphak");
+        MariaDBInfo mInfo = new MariaDBInfo("localhost", 3306,  "your_username", "your_password","your_dbname");
         string query;
 
         public dbConnect()
