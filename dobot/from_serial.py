@@ -45,7 +45,7 @@ class dobot():
     self.device.speed(self.velocity, self.acceleration)
     # 홈위치로 이동
     self.device.move_to(190, 0, 58, 0, wait=False)
-  # 두봇 2
+  # 두봇 2 초기화
   def dobot2_init(self):
     # 흡입 켜기
     self.device2.suck(False)
@@ -54,6 +54,7 @@ class dobot():
     # 홈위치로 이동
     self.device2.move_to(188, 0, 58, 0, wait=False)
 
+  #  device의 분류 동작
   def pick(self):
     # 대기시간  2500ms
     self.device.suck(True)
@@ -64,10 +65,8 @@ class dobot():
     self.device.suck(False)
     self.device.move_to(190, 0, 58, 0, wait=False)
     # self.device.suck(True)
-  def wait(self, t):
-    self.device.wait(t)
-  def wait2(self, t):
-    self.device2.wait(t)
+
+  #  device2의 분류 동작
   def pick2(self):
     self.device2.suck(True)
     self.device2.wait(2000)
@@ -77,6 +76,14 @@ class dobot():
     self.device2.suck(False)
     self.device2.move_to(188, 0, 58, 0, wait=False)
 
+  # 디바이스 1과 2의 대기 시간 설정  각 분류의 타이밍 필요
+  def wait(self, t):
+    self.device.wait(t)
+
+  def wait2(self, t):
+    self.device2.wait(t)
+
+  # 각디바이스의  종료
   def end(self):
     self.device.suck(False)
     self.device.close()
@@ -86,11 +93,4 @@ class dobot():
     self.device2.close()
 
 
-# test
-#
-# aa = dobot()
-#
-#
-# aa.dobot_init()
-#
-# aa.end()
+
